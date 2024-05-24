@@ -1,69 +1,141 @@
-/*CSS form*/
+@import url(App.css);
+
+/* Formulario */
 .form-BMI {
   background: white;
   width: 350px;
-  height: 300px;
-  border: solid;
-  border-width: 0 1px 1px 0;
+  height: 350px;
+  border: 1px solid var(--primary-color);
   border-radius: 30px;
   display: flex;
+  justify-content: center;
+}
+
+
+/* Contenedor */
+.content-form {
+  width: 90%;
+  height: 100%;
+  display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   position: relative;
+}
 
-}
+/* Título del formulario */
 .h3-BMI {
-  color: #364353;
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
-/* CSS Button*/
+
+/* Botones */
 .btn-form-BMI {
   width: 40%;
-  background-color: white;
+  background-color: var(--primary-color);
   border-radius: 20px;
-  border: 1px solid;
+  border: none;
   cursor: pointer;
-}
-.btn-form-BMI:hover {
-  background-color: #335ff6;
   color: white;
+  padding: 10px 0;
+  transition: background-color 0.3s ease;
 }
 
+.btn-form-BMI:hover {
+  background-color: #3350ff;
+}
+
+/* Radio buttons */
 .radio-form-BMI {
-  border: 1px solid;
+  width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+}
+.radio-form-BMI input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid var(--primary-color);
+  background-color: transparent;
+  outline: none;
 }
 
-.contentlbl-form-BMI{
-  border: 1px solid;
-  text-align: center;
+.radio-form-BMI input[type="radio"]:checked {
+  background-color: var(--primary-color);
+}
+
+/* Inputs */
+.contentlbl-form-BMI {
   display: flex;
   justify-content: space-evenly;
-
 }
 
 .input-form-BMI {
-  width: 40%;
+  position: relative;
+  width: 48%;
+  padding: 8px;
+  margin-top: 5px;
 }
 
+.input-form-BMI input {
+  width: 100%;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px var(--primary-color);
+}
+
+.input-form-BMI label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  color: #aaa;
+  pointer-events: none;
+  transition: top 0.3s, font-size 0.3s;
+  padding-left: 5px;
+}
+
+.input-form-BMI input:focus + label,
+.input-form-BMI input:not(:placeholder-shown) + label {
+  top: 0;
+  font-size: 0.75rem;
+  padding: 0;
+}
+
+.input-form-BMI input::placeholder {
+  color: transparent;
+  padding: 5px;
+}
+
+.input-form-BMI input:focus::placeholder {
+  color: #aaa;
+}
+
+/* Resultado BMI */
 .result-form-BMI {
-  border-radius: 10px 100px 100px 10px;
-  
+  border-radius: 10px;
   width: 90%;
   height: 40%;
   color: white;
-  background: #335ff6;
-
-
+  background: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 10px;
 }
 
-.lbl-input-form-BMI{
-  width: 48%;
-  border: 1px solid;
-  color: blue;
+.lbl-input-form-BMI {
+  width: 80%;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
   display: inline-block;
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 10px;
 }
-
-
-

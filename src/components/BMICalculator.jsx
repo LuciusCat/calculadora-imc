@@ -33,7 +33,9 @@ const BMICalculator = () => {
   };
 
   return (
-    <>
+    <div className="form-BMI">
+      <div className="content-form">
+      <h3 className="h3-BMI">Ingresa tus Datos</h3>
       <div className="radio-form-BMI">
         <label>
           <input
@@ -56,17 +58,13 @@ const BMICalculator = () => {
       </div>
       <div className="contentlbl-form-BMI">
         <BMIInput
-          placeholder={
-            unit === "metric" ? "kg" : "lbs"
-          }
+          placeholder={unit === "metric" ? "ejm. 66 kg" : "ejm. 145 lbs"}
           label={unit === "metric" ? "Peso (kg)" : "Peso (lbs)"}
           value={weight}
           onChange={(e) => setWeight(e.target.value)}
         />
         <BMIInput
-          placeholder={
-            unit === "metric" ? "cm" : "in"
-          }
+          placeholder={unit === "metric" ? "ejm. 166 cm" : "ejm. 65 in"}
           label={unit === "metric" ? "Altura (cm)" : "Altura (in)"}
           value={height}
           onChange={(e) => setHeight(e.target.value)}
@@ -77,7 +75,8 @@ const BMICalculator = () => {
         Calcular IMC
       </button>
       <BMIResult bmi={bmi} message={message} />
-    </>
+      </div>
+    </div>
   );
 };
 

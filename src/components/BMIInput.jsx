@@ -2,17 +2,15 @@ import React from 'react';
 
 const BMIInput = ({ placeholder, label, value, onChange }) => {
   return (
-    <>
-      <label className='lbl-input-form-BMI'>
-        {label}:
-        <input 
-        placeholder= {placeholder}
-        className='input-form-BMI'
+    <div className='input-form-BMI'>
+      <input 
         type="number" 
         value={value} 
-        onChange={onChange} />
-      </label>
-    </>
+        onChange={onChange} 
+        placeholder={placeholder}
+      />
+      <label>{label}</label>
+    </div>
   );
 };
 
