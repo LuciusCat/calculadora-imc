@@ -5,7 +5,11 @@ import BMICalculator from "./components/BMICalculator";
 function App() {
   return (
     <>
-      <BMICalculator />
+      <div className="page">
+        <div className="content">
+          <BMICalculator />
+        </div>
+      </div>
     </>
   );
 }
