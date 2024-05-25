@@ -1,16 +1,16 @@
-@import url(App.css);
-
 /* Formulario */
 .form-BMI {
+  margin: 1%;
   min-width: 200px;
   background: white;
-  width: 80%;
+  width: 48%;
   height: 350px;
   border-radius: 30px;
   display: flex;
   justify-content: center;
   border: 0 1px 1px 0 solid var(--primary-color);
   box-shadow: 1px 1px 3px #3350ff;
+  flex-grow: 1;
 }
 
 /* Contenedor */
@@ -98,7 +98,7 @@
 }
 
 .input-form-BMI label {
-  padding: 5px;
+  padding: 5px 0;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -136,4 +136,5 @@
   align-items: flex-start;
   padding: 10px;
 }
+
 

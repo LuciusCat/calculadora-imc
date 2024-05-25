@@ -1,0 +1,26 @@
+/*Section*/
+.section-content {
+  font-size: 0.9rem;
+}
+
+.section {
+  padding: 10px;
+  width: 48%;
+  flex-grow: 1;
+}
+
+/* Section form*/
+.section-form {
+  margin: 1px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.section-form .section-title {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+  color: var(--secondary-color);
+}

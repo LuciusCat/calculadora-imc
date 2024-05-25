@@ -50,7 +50,7 @@ const BMICalculator = () => {
                 checked={unit === "metric"}
                 onChange={() => setUnit("metric")}
               />
-              Métrico (kg, cm)
+              Métrico
             </label>
             <BMIInput
               placeholder={unit === "metric" ? "ejm. 166 cm" : "ejm. 65 in"}
@@ -67,7 +67,7 @@ const BMICalculator = () => {
                 checked={unit === "imperial"}
                 onChange={() => setUnit("imperial")}
               />
-              Imperial (lbs, in)
+              Imperial
             </label>
             <BMIInput
               placeholder={unit === "metric" ? "ejm. 66 kg" : "ejm. 145 lbs"}

@@ -1,0 +1,31 @@
+.table-bmi {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1.2em;
+    text-align: left;
+  }
+  
+  th, td {
+    padding: 12px 15px;
+  }
+  
+  th {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+
+  tr:hover {
+    background-color: #f1f1f1;
+  }

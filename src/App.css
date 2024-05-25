@@ -18,10 +18,10 @@
 
 /* Page */
 .page {
-  background: linear-gradient(220.55deg, #8fff85 0%, #39a0ff 100%);
+  background: var(--primary-color);
   height: 1200px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -32,7 +32,7 @@
   height: 100%;
   background-color: white;
   display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
