@@ -1,15 +1,26 @@
-/*Section*/
-.section-content {
+@import url("../App.css");
+/*Section Form*/
+.section-form .section-content {
   font-size: 0.9rem;
+  color: white;
+  text-shadow: var(--all-text-shadow);
+  font-weight: 500;
 }
 
-.section {
+.section-form .section-form-1 {
+  background-image: url("../img/medico.png");
+  background-size: cover;
+  background-repeat: round;
+  background-color: var(--primary-color);
+  margin: 1% 0 1% 1%;
   padding: 10px;
+  height: 100%;
+  min-height: 350px;
   width: 48%;
   flex-grow: 1;
+  border-radius: 30px;
 }
 
-/* Section form*/
 .section-form {
   margin: 1px;
   width: 100%;
@@ -22,5 +33,51 @@
 .section-form .section-title {
   font-size: 1.7rem;
   margin-bottom: 10px;
-  color: var(--secondary-color);
+  color: white;
+  text-shadow: var(--all-text-shadow);
 }
+
+/* Section Article*/
+.article-explain {
+  width: 98%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 30px;
+  background-color: var(--primary-color);
+}
+.section-explain{
+  width: 50%;
+  font-weight: 400;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.section-title {
+  padding: 10px;
+  border-radius: 30px;
+  color: white;
+  text-align: center;
+  overflow: auto;
+
+}
+
+.img-doc-2 {
+  background-image: url("../img/medico-2.png");
+  width: 250px;
+  height: 250px;
+  background-size: cover;
+  background-repeat: round;
+  background-color: bisque;
+  border-radius: 30px;
+  margin: 15px 0;
+}
+
+@media (max-width: 768px) {
+  .section-explain {
+    flex-grow: 1;
+  }
+}
+
