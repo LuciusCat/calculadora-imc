@@ -57,7 +57,7 @@ function App() {
             </Section>
             <div className="img-doc-2" />
           </article>
-          <div className="carrusel-icon-section">
+          <div className="container-icon-section">
             <IconSection
               idCard={sectionHealth.idCard}
               idImg={sectionHealth.idImg}

@@ -4,8 +4,7 @@ export const sectionHealth = {
   title: "Cuide su alimentación",
   content: (
     <p>
-      Una alimentación saludable favorece el control del peso, previene
-      enfermedades, mejora la digestión, fortalece el sistema inmunológico, y
+      Una alimentación saludable favorece el control del peso, mejora la digestión, fortalece el sistema inmunológico, y
       promueve la claridad mental y un estado de ánimo positivo.
     </p>
   ),
