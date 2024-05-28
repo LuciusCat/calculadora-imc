@@ -1,0 +1,87 @@
+.icon-section {
+  width: 30%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  border: 8px outset;
+  border-radius: 30px;
+}
+
+.img-div {
+  background-size: cover;
+  background-repeat: round;
+  width: 70px;
+  height: 70px;
+  border: 3px outset;
+  border-radius: 50%;
+
+}
+
+.section-title-icon {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: var(--secondary-color);
+}
+
+.section-content-icon {
+  font-size: 1rem;
+  text-align: center;
+}
+
+#apple-card {
+   border-color: #75fb4c;
+}
+
+#apple {
+  background-image: url("../img/manzana.png");
+  border-color: #75fb4c;
+}
+
+#exercise {
+  background-image: url("../img/pesa.png");
+  border-color: #e0944c;
+}
+
+#exercise-card {
+  border-color: #e0944c;
+}
+
+#sleep {
+  background-image: url("../img/luna.png");
+  border-color: #fffc54;
+}
+
+#sleep-card {
+  border-color: #fffc54;
+}
+
+#hidro {
+  background-image: url(../img/agua.png);
+  border-color: #78fcfc;
+}
+
+#hidro-card {
+  border-color: #78fcfc;
+}
+
+#stress {
+  background-image: url("../img/yoga.png");
+  border-color: #684ca4;
+}
+
+#stress-card {
+  border-color: #684ca4;
+}
+
+#regular {
+  background-image: url("../img/reloj.png");
+  border-color: #a09c9c;
+}
+
+#regular-card {
+  border-color: #a09c9c;
+}

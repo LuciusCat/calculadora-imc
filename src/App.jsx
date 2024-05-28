@@ -3,6 +3,15 @@ import "./App.css";
 import BMICalculator from "./components/BMICalculator";
 import TableBMI from "./components/TableBMI";
 import Section from "./components/Section";
+import IconSection from "./components/IconSection";
+import {
+  sectionHealth,
+  sectionExercise,
+  sectionSleep,
+  sectionHidro,
+  sectionStress,
+  sectionRegular,
+} from "./data/dataIcon";
 
 const bmiData = [
   { classification: "Bajo peso", bmi: "Menos de 18,4" },
@@ -16,7 +25,7 @@ const bmiData = [
 const sectionFormTitle = "CALCULADORA ÍNDICE DE MASA CORPORAL";
 
 const sectionFormTxt =
-  "Comprenda mejor su peso en relación con el suyo utilizando nuestra calculadora de índice de masa corporal (BM). Si bien el IMC no es el único determinante de un peso saludable, ofrece un valioso punto de partida para evaluar su salud y bienestar general.";
+  "Comprenda mejor su peso en relación con su estatura utilizando nuestra calculadora de índice de masa corporal (IMC). Si bien el IMC no es el único determinante de un peso saludable, ofrece un valioso punto de partida para evaluar su salud y bienestar general.";
 
 const sectionExplainTitle = "¿Qué significa su resultado de IMC?";
 
@@ -48,7 +57,60 @@ function App() {
             </Section>
             <div className="img-doc-2" />
           </article>
+          <div className="carrusel-icon-section">
+            <IconSection
+              idCard={sectionHealth.idCard}
+              idImg={sectionHealth.idImg}
+              title={sectionHealth.title}
+              titleLevel={sectionHealth.titleLevel}
+            >
+              {sectionHealth.content}
+            </IconSection>
+            <IconSection
+              idCard={sectionExercise.idCard}
+              idImg={sectionExercise.idImg}
+              title={sectionExercise.title}
+              titleLevel={sectionExercise.titleLevel}
+            >
+              {sectionExercise.content}
+            </IconSection>
 
+            <IconSection
+              idCard={sectionSleep.idCard}
+              idImg={sectionSleep.idImg}
+              title={sectionSleep.title}
+              titleLevel={sectionSleep.titleLevel}
+            >
+              {sectionSleep.content}
+            </IconSection>
+
+            <IconSection
+              idCard={sectionHidro.idCard}
+              idImg={sectionHidro.idImg}
+              title={sectionHidro.title}
+              titleLevel={sectionHidro.titleLevel}
+            >
+              {sectionHidro.content}
+            </IconSection>
+
+            <IconSection
+              idCard={sectionStress.idCard}
+              idImg={sectionStress.idImg}
+              title={sectionStress.title}
+              titleLevel={sectionStress.titleLevel}
+            >
+              {sectionStress.content}
+            </IconSection>
+
+            <IconSection
+              idCard={sectionRegular.idCard}
+              idImg={sectionRegular.idImg}
+              title={sectionRegular.title}
+              titleLevel={sectionRegular.titleLevel}
+            >
+              {sectionRegular.content}
+            </IconSection>
+          </div>
           <TableBMI data={bmiData} />
         </div>
       </div>
