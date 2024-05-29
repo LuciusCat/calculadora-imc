@@ -13,6 +13,16 @@ import {
   sectionRegular,
 } from "./data/dataIcon";
 
+import "./css/LimitsSection.css"
+
+import {
+  sectionGender,
+  sectionAge,
+  sectionMuscle,
+  sectionPregnancy,
+  sectionRace,
+} from "./data/dataLimits";
+
 const bmiData = [
   { classification: "Bajo peso", bmi: "Menos de 18,4" },
   { classification: "Peso normal", bmi: "18,5 a 24,9" },
@@ -31,6 +41,11 @@ const sectionExplainTitle = "¿Qué significa su resultado de IMC?";
 
 const sectionExplainTxt =
   'Un IMC entre 18,5 y 24,9 se considera un "peso saludable". Mantener un peso saludable puede reducir las posibilidades de experimentar problemas de salud en el futuro, como obesidad y diabetes tipo 2. Trate de seguir una dieta nutritiva con contenido reducido de grasas y azúcares, incorporando abundantes frutas y verduras. Además, esfuércese por realizar actividad física con regularidad, idealmente unos 30 minutos diarios durante cinco días a la semana.';
+
+const sectionLimitsTitle = "Limitaciones del IMC";
+
+const sectionLimitsTxt =
+  "Aunque el IMC suele ser un indicador práctico para evaluar un peso saludable, no es adecuado para todas las personas. Grupos específicos deben interpretar los resultados de su IMC con cautela y, en algunos casos, puede no ser beneficioso utilizar esta medición.";
 
 function App() {
   return (
@@ -57,8 +72,10 @@ function App() {
             </Section>
             <div className="img-doc-2" />
           </article>
+          <h2>Consejos para mantener un peso saludable</h2>
           <div className="container-icon-section">
             <IconSection
+              className={"icon-section"}
               idCard={sectionHealth.idCard}
               idImg={sectionHealth.idImg}
               title={sectionHealth.title}
@@ -67,6 +84,7 @@ function App() {
               {sectionHealth.content}
             </IconSection>
             <IconSection
+              className={"icon-section"}
               idCard={sectionExercise.idCard}
               idImg={sectionExercise.idImg}
               title={sectionExercise.title}
@@ -76,6 +94,7 @@ function App() {
             </IconSection>
 
             <IconSection
+              className={"icon-section"}
               idCard={sectionSleep.idCard}
               idImg={sectionSleep.idImg}
               title={sectionSleep.title}
@@ -85,6 +104,7 @@ function App() {
             </IconSection>
 
             <IconSection
+              className={"icon-section"}
               idCard={sectionHidro.idCard}
               idImg={sectionHidro.idImg}
               title={sectionHidro.title}
@@ -94,6 +114,7 @@ function App() {
             </IconSection>
 
             <IconSection
+              className={"icon-section"}
               idCard={sectionStress.idCard}
               idImg={sectionStress.idImg}
               title={sectionStress.title}
@@ -103,6 +124,7 @@ function App() {
             </IconSection>
 
             <IconSection
+              className={"icon-section"}
               idCard={sectionRegular.idCard}
               idImg={sectionRegular.idImg}
               title={sectionRegular.title}
@@ -111,6 +133,67 @@ function App() {
               {sectionRegular.content}
             </IconSection>
           </div>
+
+          <article className="article-explain">
+            <Section
+              className={"section-explain"}
+              title={sectionLimitsTitle}
+              titleLevel={"h2"}
+            >
+              {sectionLimitsTxt}
+              <div className="container-limits-section">
+                <IconSection
+                  className={"limits-section"}
+                  idCard={sectionGender.idCard}
+                  idImg={sectionGender.idImg}
+                  title={sectionGender.title}
+                  titleLevel={sectionGender.titleLevel}
+                >
+                  {sectionGender.content}
+                </IconSection>
+
+                <IconSection
+                  className={"limits-section"}
+                  idCard={sectionAge.idCard}
+                  idImg={sectionAge.idImg}
+                  title={sectionAge.title}
+                  titleLevel={sectionAge.titleLevel}
+                >
+                  {sectionAge.content}
+                </IconSection>
+
+                <IconSection
+                  className={"limits-section"}
+                  idCard={sectionMuscle.idCard}
+                  idImg={sectionMuscle.idImg}
+                  title={sectionMuscle.title}
+                  titleLevel={sectionMuscle.titleLevel}
+                >
+                  {sectionMuscle.content}
+                </IconSection>
+
+                <IconSection
+                  className={"limits-section"}
+                  idCard={sectionPregnancy.idCard}
+                  idImg={sectionPregnancy.idImg}
+                  title={sectionPregnancy.title}
+                  titleLevel={sectionPregnancy.titleLevel}
+                >
+                  {sectionPregnancy.content}
+                </IconSection>
+
+                <IconSection
+                  className={"limits-section"}
+                  idCard={sectionRace.idCard}
+                  idImg={sectionRace.idImg}
+                  title={sectionRace.title}
+                  titleLevel={sectionRace.titleLevel}
+                >
+                  {sectionRace.content}
+                </IconSection>
+              </div>
+            </Section>
+          </article>
           <TableBMI data={bmiData} />
         </div>
       </div>

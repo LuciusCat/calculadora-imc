@@ -1,0 +1,110 @@
+.container-limits-section {
+    margin-top: 15px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "n1 n1 n2 n2 n3 n3"
+    "n1 n1 n2 n2 n3 n3"
+    "n4 n4 n4 n5 n5 n5"
+    "n4 n4 n4 n5 n5 n5";
+  border-radius: 30px;
+}
+
+.limits-section {
+  margin: 1%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  place-items: unset;
+  justify-content: space-evenly;
+  padding: 20px;
+  border: 8px outset;
+  border-radius: 30px;
+  background-color: white;
+  transition: all .5s ease;
+}
+
+.limits-section .section-title-icon {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: var(--secondary-color);
+}
+
+.limits-section .img-div {
+  background-size: cover;
+  background-repeat: round;
+  width: 35px;
+  height: 35px;
+  border: 3px outset;
+  border-radius: 50%;
+}
+
+.limits-section .section-content-icon {
+  font-size: 1rem;
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+#gender-card {
+  border-color: #f03424;
+  grid-area: n1;
+}
+
+#gender {
+  background-image: url("../img/male.png");
+  border-color: #f03424;
+}
+
+#age-card {
+  border-color: #78fcfc;
+  grid-area: n2;
+}
+
+#age {
+  border-color: #78fcfc;
+  background-image: url("../img/pastel.png");
+}
+
+#muscle-card {
+  border-color: #901cf4;
+  grid-area: n3;
+}
+
+#muscle {
+  background-image: url("../img/pesa2.png");
+  border-color: #901cf4;
+}
+
+#pregnancy-card {
+  border-color: #f034f4;
+  grid-area: n4;
+}
+
+#pregnancy {
+  background-image: url("../img/embarazo.png");
+  border-color: #f034f4;
+}
+
+#race-card {
+  border-color: #802c14;
+  grid-area: n5;
+}
+
+#race {
+  background-image: url("../img/diversidad.png");
+  border-color: #802c14;
+}
+
+@media (max-width: 768px) {
+  .container-limits-section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .limits-section {
+    flex-grow: 1;
+  }
+}

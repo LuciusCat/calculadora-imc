@@ -39,3 +39,7 @@
   flex-wrap: wrap;
   transition: width 0.5s ease;
 }
+
+.h2-sub {
+  color: red;
+}
