@@ -23,9 +23,9 @@ import {
   sectionRace,
 } from "./data/dataLimits";
 
-import ListSection from "./components/ListSection"
+import ListSection from "./components/ListSection";
 
-import { overweight } from "./data/dataListSection";
+import { overweight, underweight } from "./data/dataListSection";
 
 const bmiData = [
   { classification: "Bajo peso", bmi: "Menos de 18,4" },
@@ -220,12 +220,19 @@ function App() {
               </div>
             </Section>
           </article>
-            <ListSection
-              title={overweight.title}
-              intro={overweight.intro}
-              listItems={overweight.listItems}
-              conclusion={overweight.conclusion}
-            />
+          <ListSection
+            title={overweight.title}
+            intro={overweight.intro}
+            listItems={overweight.listItems}
+            conclusion={overweight.conclusion}
+          />
+
+          <ListSection
+            title={underweight.title}
+            intro={underweight.intro}
+            listItems={underweight.listItems}
+            conclusion={underweight.conclusion}
+          />
         </div>
       </div>
     </>
