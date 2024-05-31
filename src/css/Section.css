@@ -79,6 +79,25 @@
   margin: 15px 0;
 }
 
+.section-table {
+  margin-top: 1%;
+  background-color: var(--primary-color);
+  width: 98%;
+  border-radius: 30px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  min-width: 300px;
+}
+
+.section-table .section-content {
+  width: 90%;
+  font-weight: 400;
+  margin: 2%;
+}
+
 @media (max-width: 768px) {
   .section-explain {
     flex-grow: 1;

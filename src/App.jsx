@@ -13,7 +13,7 @@ import {
   sectionRegular,
 } from "./data/dataIcon";
 
-import "./css/LimitsSection.css"
+import "./css/LimitsSection.css";
 
 import {
   sectionGender,
@@ -22,6 +22,10 @@ import {
   sectionPregnancy,
   sectionRace,
 } from "./data/dataLimits";
+
+import ListSection from "./components/ListSection"
+
+import { overweight } from "./data/dataListSection";
 
 const bmiData = [
   { classification: "Bajo peso", bmi: "Menos de 18,4" },
@@ -46,6 +50,17 @@ const sectionLimitsTitle = "Limitaciones del IMC";
 
 const sectionLimitsTxt =
   "Aunque el IMC suele ser un indicador práctico para evaluar un peso saludable, no es adecuado para todas las personas. Grupos específicos deben interpretar los resultados de su IMC con cautela y, en algunos casos, puede no ser beneficioso utilizar esta medición.";
+
+const Subtitle = ({ content }) => {
+  return <h2 className="h2-sub">{content}</h2>;
+};
+
+const h2Tips = "Consejos para mantener un peso saludable";
+
+const sectionTableTitle = "Tabla de IMC para adultos";
+
+const sectionTableTxt =
+  "La tabla de Índice de Masa Corporal (IMC) es una herramienta utilizada para evaluar si una persona tiene un peso saludable en relación con su altura. El IMC se calcula dividiendo el peso de una persona en kilogramos por el cuadrado de su altura en metros (kg/m²). Los valores obtenidos se clasifican en diferentes categorías para facilitar la interpretación:";
 
 function App() {
   return (
@@ -72,7 +87,8 @@ function App() {
             </Section>
             <div className="img-doc-2" />
           </article>
-          <h2>Consejos para mantener un peso saludable</h2>
+
+          <Subtitle content={h2Tips} />
           <div className="container-icon-section">
             <IconSection
               className={"icon-section"}
@@ -134,6 +150,16 @@ function App() {
             </IconSection>
           </div>
 
+          <Section
+            className={"section-table"}
+            title={sectionTableTitle}
+            titleLevel={"h2"}
+          >
+            {sectionTableTxt}
+          </Section>
+
+          <TableBMI data={bmiData} />
+
           <article className="article-explain">
             <Section
               className={"section-explain"}
@@ -194,7 +220,12 @@ function App() {
               </div>
             </Section>
           </article>
-          <TableBMI data={bmiData} />
+            <ListSection
+              title={overweight.title}
+              intro={overweight.intro}
+              listItems={overweight.listItems}
+              conclusion={overweight.conclusion}
+            />
         </div>
       </div>
     </>
