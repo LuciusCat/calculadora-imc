@@ -38,7 +38,7 @@ const BMICalculator = () => {
 
   return (
     <div className="form-BMI">
-      <div className="content-form">
+      <div className="content-form" id="calculator-BMI">
         <h3 className="h3-BMI">Ingresa tus Datos</h3>
 
         <div className="input-elements">

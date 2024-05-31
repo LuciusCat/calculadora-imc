@@ -1,9 +1,9 @@
 import React from "react";
 import "../css/ListSection.css"
 
-const ListSection = ({ title, intro, listItems, conclusion }) => {
+const ListSection = ({ id, title, intro, listItems, conclusion }) => {
   return(
-      <div className="list-section">
+      <div className="list-section" id={id}>
         <h2>{title}</h2>
         <p>{intro}</p>
         <ul>

@@ -27,6 +27,8 @@ import ListSection from "./components/ListSection";
 
 import { overweight, underweight } from "./data/dataListSection";
 
+import Menu from "./components/Menu";
+
 const bmiData = [
   { classification: "Bajo peso", bmi: "Menos de 18,4" },
   { classification: "Peso normal", bmi: "18,5 a 24,9" },
@@ -51,8 +53,8 @@ const sectionLimitsTitle = "Limitaciones del IMC";
 const sectionLimitsTxt =
   "Aunque el IMC suele ser un indicador práctico para evaluar un peso saludable, no es adecuado para todas las personas. Grupos específicos deben interpretar los resultados de su IMC con cautela y, en algunos casos, puede no ser beneficioso utilizar esta medición.";
 
-const Subtitle = ({ content }) => {
-  return <h2 className="h2-sub">{content}</h2>;
+const Subtitle = ({ content}) => {
+  return <h2 className="h2-sub" id="tips">{content}</h2>;
 };
 
 const h2Tips = "Consejos para mantener un peso saludable";
@@ -66,6 +68,7 @@ function App() {
   return (
     <>
       <div className="page">
+        <Menu />
         <div className="content">
           <div className="section-form">
             <Section
@@ -75,9 +78,9 @@ function App() {
             >
               {sectionFormTxt}
             </Section>
-            <BMICalculator />
+            <BMICalculator/>
           </div>
-          <article className="article-explain">
+          <article className="article-explain" id="result-BMI">
             <Section
               className={"section-explain"}
               title={sectionExplainTitle}
@@ -151,6 +154,7 @@ function App() {
           </div>
 
           <Section
+            id={"table"}
             className={"section-table"}
             title={sectionTableTitle}
             titleLevel={"h2"}
@@ -160,7 +164,7 @@ function App() {
 
           <TableBMI data={bmiData} />
 
-          <article className="article-explain">
+          <article className="article-explain" id="limits-BMI">
             <Section
               className={"section-explain"}
               title={sectionLimitsTitle}
@@ -221,6 +225,7 @@ function App() {
             </Section>
           </article>
           <ListSection
+            id={"overweight-risks"}
             title={overweight.title}
             intro={overweight.intro}
             listItems={overweight.listItems}
@@ -228,6 +233,7 @@ function App() {
           />
 
           <ListSection
+            id={"underweight-risks"}
             title={underweight.title}
             intro={underweight.intro}
             listItems={underweight.listItems}
