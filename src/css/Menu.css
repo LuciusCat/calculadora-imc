@@ -46,3 +46,9 @@
         overflow: scroll;
     }
 }
+
+@media (max-width: 768px) {
+    .container-menu {
+        display: none;
+    }
+}

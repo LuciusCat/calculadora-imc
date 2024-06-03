@@ -7,6 +7,7 @@ import IconSection from "./components/IconSection";
 import Subtitle from "./components/Subtitle";
 import ListSection from "./components/ListSection";
 import Menu from "./components/Menu";
+import ButtonMenu from "./components/ButtonMenu";
 
 import "./css/LimitsSection.css";
 
@@ -52,6 +53,7 @@ function App() {
       <div className="page">
         <Menu title={"Tabla de contenido"} items={menuItems} />
         <div className="content">
+          <ButtonMenu menuItems={menuItems} />
           <div className="section-form">
             <Section
               className={"section-form-1"}
