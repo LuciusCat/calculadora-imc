@@ -28,6 +28,7 @@ import ListSection from "./components/ListSection";
 import { overweight, underweight } from "./data/dataListSection";
 
 import Menu from "./components/Menu";
+import { menuItems } from "./data/dataMenu";
 
 const bmiData = [
   { classification: "Bajo peso", bmi: "Menos de 18,4" },
@@ -68,7 +69,9 @@ function App() {
   return (
     <>
       <div className="page">
-        <Menu />
+        <Menu title={"Tabla de contenido"}
+        items={menuItems}
+        />
         <div className="content">
           <div className="section-form">
             <Section
