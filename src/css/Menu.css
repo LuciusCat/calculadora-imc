@@ -1,8 +1,8 @@
 .container-menu {
-    width: 24%;
+    width: 22%;
     font-weight: 500;
     position: fixed;
-    margin: 1%;
+    margin: 2%;
     top: 25%;
     left: 0;
     transition: all .5s ease;
@@ -22,6 +22,12 @@
     border-radius: 30px;
     padding: 7px 0;
     text-align: center;
+    transition: all .5s ease;
+}
+
+.container-menu li:hover {
+    transform: scale(1.1);
+    background-color: #3350ff;
 }
 
 .container-menu a {
