@@ -16,13 +16,13 @@
 }
 
 .container-menu li {
-    padding: 5px 0;
     background-color: var(--primary-color);
     margin: 10px 0;
     border-radius: 30px;
     padding: 7px 0;
     text-align: center;
     transition: all .5s ease;
+    border: 2px solid white;
 }
 
 .container-menu li:hover {
@@ -31,12 +31,14 @@
 }
 
 .container-menu a {
+    padding: 5px 8px;
     text-decoration: none;
     color: white;
 }
 
 .container-menu h3 {
     text-align: center;
+    color: var(--primary-color);
 }
 
 @media (max-height: 768px) {
@@ -56,5 +58,17 @@
 @media (max-width: 768px) {
     .container-menu {
         display: none;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .container-menu li {
+        width: 90%;
+    }
+
+    .container-menu ul {
+        display: flex;
+        align-items: center;
     }
 }

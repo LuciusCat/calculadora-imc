@@ -6,6 +6,9 @@
   flex-wrap: wrap;
   border-radius: 30px;
 }
+.icon-section:hover {
+  scale: 1.1;
+}
 
 .icon-section {
   min-width: 250px;
@@ -22,6 +25,7 @@
   border-radius: 30px;
   flex-grow: 1;
   background-color: white;
+  transition: all .5s ease;
 }
 
 .img-div {
@@ -50,6 +54,10 @@
    border-color: #75fb4c;
 }
 
+#apple-card:hover {
+  background-color: rgba(117, 251, 76, .2);
+}
+
 #apple {
   background-image: url("../img/manzana.png");
   border-color: #75fb4c;
@@ -58,6 +66,10 @@
 #exercise {
   background-image: url("../img/pesa.png");
   border-color: #e0944c;
+}
+
+#exercise-card:hover {
+  background-color: rgba(224, 148, 76, .2);
 }
 
 #exercise-card {
@@ -69,6 +81,10 @@
   border-color: #fffc54;
 }
 
+#sleep-card:hover {
+  background-color: rgba(255, 252, 84, .2);
+}
+
 #sleep-card {
   border-color: #fffc54;
 }
@@ -76,6 +92,10 @@
 #hidro {
   background-image: url(../img/agua.png);
   border-color: #78fcfc;
+}
+
+#hidro-card:hover {
+  background-color: rgba(120, 252, 252, .2);
 }
 
 #hidro-card {
@@ -87,6 +107,10 @@
   border-color: #684ca4;
 }
 
+#stress-card:hover {
+  background-color: rgba(104, 76, 164, .2);
+}
+
 #stress-card {
   border-color: #684ca4;
 }
@@ -94,6 +118,10 @@
 #regular {
   background-image: url("../img/reloj.png");
   border-color: #a09c9c;
+}
+
+#regular-card:hover {
+  background-color: rgba(160, 156, 156, .2);
 }
 
 #regular-card {
@@ -104,10 +132,13 @@
   .container-icon-section{
     flex-wrap: nowrap;
     overflow: scroll;
+    overflow-y: hidden;
+    scrollbar-width: auto;
+    scrollbar-color: var(--primary-color) white;
   }
   .icon-section {
     flex: 1 0 auto;
-    margin: 10px 30px;
+    margin: 20px 30px;
   }
 }
 
