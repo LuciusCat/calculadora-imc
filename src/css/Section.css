@@ -1,10 +1,10 @@
 @import url("../App.css");
 /*Section Form*/
 .section-form .section-content {
+  text-align: center;
   font-size: 0.9rem;
   color: white;
   text-shadow: var(--all-text-shadow);
-  font-weight: 500;
 }
 
 .section-form .section-form-1 {
@@ -19,6 +19,7 @@
   width: 48%;
   flex-grow: 1;
   border-radius: 30px;
+  font-weight: 500;
 }
 
 .section-form {
@@ -93,8 +94,8 @@
 }
 
 .section-table .section-content {
+  text-align: center;
   width: 90%;
-  font-weight: 400;
   margin: 2%;
 }
 

@@ -7,7 +7,7 @@
   border-radius: 30px;
 }
 .icon-section:hover {
-  scale: 1.1;
+  scale: 1.05;
 }
 
 .icon-section {
@@ -129,7 +129,7 @@
 }
 
 @media (max-width: 768px) {
-  .container-icon-section{
+  .container-icon-section {
     flex-wrap: nowrap;
     overflow: scroll;
     overflow-y: hidden;
@@ -142,3 +142,8 @@
   }
 }
 
+@media (max-width: 1000px) {
+  .icon-section {
+    margin: 2%;
+  }
+}
